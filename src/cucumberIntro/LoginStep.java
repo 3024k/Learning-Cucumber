@@ -8,6 +8,11 @@ import cucumber.api.java.en.When;
 
 public class LoginStep {
 	
+	@Given("^Launch the Chrome browser$")
+	public void Launch_the_Chrome_browser() {
+		System.out.println("Launching the chrome browser...");
+	}
+	
 	@Given("^I launch the application$")
 	public void I_launch_the_application() {
 		System.out.println("I launch the application");
