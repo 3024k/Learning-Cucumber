@@ -1,3 +1,5 @@
+@Smoke @Sanity
+
 Feature: Check my basket application
 
 Scenario: No item selected in basket

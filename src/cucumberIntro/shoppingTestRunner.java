@@ -10,7 +10,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		monochrome = true,
 		features = "src/cucumberIntro",
-		plugin = {"pretty","html:target/cucmber-html-report"}
+		plugin = {"pretty","html:target/cucmber-html-report"},
+		tags = "@Sanity"
 		)
 public class shoppingTestRunner extends AbstractTestNGCucumberTests{
 
