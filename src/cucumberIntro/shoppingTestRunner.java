@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		plugin = {"pretty","html:target/cucmber-html-report"},
 		tags = "@Regression"
 		)
-public class shoppingTestRunner extends AbstractTestNGCucumberTests{
+public class shoppingTestRunner{// extends AbstractTestNGCucumberTests{
 
 	
 

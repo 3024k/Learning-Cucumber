@@ -28,7 +28,7 @@ formatter.match({
   "location": "LoginStep.Launch_the_Chrome_browser()"
 });
 formatter.result({
-  "duration": 101801900,
+  "duration": 162911700,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,28 +63,28 @@ formatter.match({
   "location": "LoginStep.I_launch_the_application()"
 });
 formatter.result({
-  "duration": 74400,
+  "duration": 208000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.I_enter_correct_username_and_password()"
 });
 formatter.result({
-  "duration": 170700,
+  "duration": 664000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.clicked_on_Login_Button()"
 });
 formatter.result({
-  "duration": 85200,
+  "duration": 188400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.I_am_login_into_application()"
 });
 formatter.result({
-  "duration": 76800,
+  "duration": 252800,
   "status": "passed"
 });
 formatter.background({
@@ -103,7 +103,7 @@ formatter.match({
   "location": "LoginStep.Launch_the_Chrome_browser()"
 });
 formatter.result({
-  "duration": 545300,
+  "duration": 226600,
   "status": "passed"
 });
 formatter.scenario({
@@ -138,28 +138,28 @@ formatter.match({
   "location": "LoginStep.I_launch_the_application()"
 });
 formatter.result({
-  "duration": 89400,
+  "duration": 277800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.I_enter_correct_username_and_password()"
 });
 formatter.result({
-  "duration": 71000,
+  "duration": 71800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.clicked_on_Login_Button()"
 });
 formatter.result({
-  "duration": 55400,
+  "duration": 80900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.I_am_login_into_application()"
 });
 formatter.result({
-  "duration": 39800,
+  "duration": 204000,
   "status": "passed"
 });
 });
