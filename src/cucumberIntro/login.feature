@@ -1,4 +1,4 @@
-@Regression
+@Hook
 Feature: Login into account
 
 Background:

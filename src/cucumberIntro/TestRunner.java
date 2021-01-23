@@ -11,9 +11,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		monochrome = true,
 		features = "src/cucumberIntro",
 		plugin = {"pretty","html:target/cucmber-html-report"},
-		tags = "@Regression"
+		tags = "@Hook"
 		)
-public class _shoppingTestRunner{// extends AbstractTestNGCucumberTests{
+public class TestRunner{// extends AbstractTestNGCucumberTests{
 
 	
 

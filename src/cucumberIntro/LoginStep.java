@@ -1,5 +1,7 @@
 package cucumberIntro;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,6 +9,23 @@ import cucumber.api.java.en.When;
 
 
 public class LoginStep {
+	@Before("@SignUp")
+	public void beforeScenario() {
+		System.out.println("This is before hook");
+	}
+	@After("@SignUp")
+	public void afterScenario() {
+		System.out.println("This is after hook");
+	}
+	
+	@Before
+	public void beforeScenarioTag() {
+		System.out.println("This is before hook without tag");
+	}
+	@After
+	public void afterScenarioTag() {
+		System.out.println("This is after hook without tag");
+	}
 	
 	@Given("^Launch the Chrome browser$")
 	public void Launch_the_Chrome_browser() {
