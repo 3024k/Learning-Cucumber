@@ -17,19 +17,19 @@ public class shoppingStep {
 		System.out.println("I should see a selection of products");
 	}
 	
-	@When("^I browse [a-zA-Z]{1,} buying product$")
-	public void I_browse_without_buying_product() {
-		System.out.println("I browse without buying product");
+	@When("^I browse \"([a-zA-Z]{1,})\" buying product$")
+	public void I_browse_without_buying_product(String buyingActivity) {
+		System.out.println("I browse "+buyingActivity+" buying product");
 		
 	}
-	@Then("^my basket [a-zA-Z]{1,} be empty$")
-	public void my_basket_should_be_empty() {
-		System.out.println("my basket should be empty");
+	@Then("^my basket \"([a-zA-Z]{1,})\" be empty$")
+	public void my_basket_should_be_empty(String action) {
+		System.out.println("my basket "+action+" be empty");
 	}
 	
-	@And("^I [a-zA-Z]{1,} buy an item$")
-	public void I_cannot_buy_an_item() {
-		System.out.println("I cannot buy an item");
+	@And("^I \"([a-zA-Z]{1,})\" buy an item$")
+	public void I_cannot_buy_an_item(String data) {
+		System.out.println("I "+data+ " buy an item");
 	}
 	/*
 	@When("I browse with buying product")
