@@ -27,30 +27,73 @@ formatter.scenarioOutline({
 formatter.step({
   "line": 6,
   "name": "I start the application",
+  "rows": [
+    {
+      "cells": [
+        "Application_Name"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Flipkart"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "Amazon"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 10,
   "name": "I should see a selection of products",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 11,
   "name": "I browse \"\u003cBuying_Products\u003e\" buying product",
+  "rows": [
+    {
+      "cells": [
+        "Product_Name",
+        "Product_Company"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Shoes",
+        "Adidas"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "T-shirt",
+        "4F"
+      ],
+      "line": 14
+    }
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 15,
   "name": "my basket \"\u003cBasket_status\u003e\" be empty",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
   "name": "I \"\u003cBuy_status\u003e\" buy an item",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 13,
+  "line": 19,
   "name": "",
   "description": "",
   "id": "check-my-basket-application;no-item-selected-in-basket;",
@@ -61,7 +104,7 @@ formatter.examples({
         "Basket_status",
         "Buy_status"
       ],
-      "line": 14,
+      "line": 20,
       "id": "check-my-basket-application;no-item-selected-in-basket;;1"
     },
     {
@@ -70,7 +113,7 @@ formatter.examples({
         "should",
         "cannot"
       ],
-      "line": 15,
+      "line": 21,
       "id": "check-my-basket-application;no-item-selected-in-basket;;2"
     },
     {
@@ -79,7 +122,7 @@ formatter.examples({
         "shouldnot",
         "can"
       ],
-      "line": 16,
+      "line": 22,
       "id": "check-my-basket-application;no-item-selected-in-basket;;3"
     },
     {
@@ -88,14 +131,14 @@ formatter.examples({
         "yyy",
         "zzz"
       ],
-      "line": 17,
+      "line": 23,
       "id": "check-my-basket-application;no-item-selected-in-basket;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 15,
+  "line": 21,
   "name": "No item selected in basket",
   "description": "",
   "id": "check-my-basket-application;no-item-selected-in-basket;;2",
@@ -115,23 +158,66 @@ formatter.scenario({
 formatter.step({
   "line": 6,
   "name": "I start the application",
+  "rows": [
+    {
+      "cells": [
+        "Application_Name"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Flipkart"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "Amazon"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 10,
   "name": "I should see a selection of products",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 11,
   "name": "I browse \"without\" buying product",
   "matchedColumns": [
     0
   ],
+  "rows": [
+    {
+      "cells": [
+        "Product_Name",
+        "Product_Company"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Shoes",
+        "Adidas"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "T-shirt",
+        "4F"
+      ],
+      "line": 14
+    }
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 15,
   "name": "my basket \"should\" be empty",
   "matchedColumns": [
     1
@@ -139,7 +225,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
   "name": "I \"cannot\" buy an item",
   "matchedColumns": [
     2
@@ -147,17 +233,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "shoppingStep.I_start_the_application()"
+  "location": "shoppingStep.I_start_the_application(DataTable)"
 });
 formatter.result({
-  "duration": 114678500,
+  "duration": 124426900,
   "status": "passed"
 });
 formatter.match({
   "location": "shoppingStep.I_should_see_a_selection_of_products()"
 });
 formatter.result({
-  "duration": 76300,
+  "duration": 71100,
   "status": "passed"
 });
 formatter.match({
@@ -167,10 +253,10 @@ formatter.match({
       "offset": 10
     }
   ],
-  "location": "shoppingStep.I_browse_without_buying_product(String)"
+  "location": "shoppingStep.I_browse_without_buying_product(String,DataTable)"
 });
 formatter.result({
-  "duration": 2052000,
+  "duration": 920400,
   "status": "passed"
 });
 formatter.match({
@@ -183,7 +269,7 @@ formatter.match({
   "location": "shoppingStep.my_basket_should_be_empty(String)"
 });
 formatter.result({
-  "duration": 85100,
+  "duration": 786800,
   "status": "passed"
 });
 formatter.match({
@@ -196,11 +282,11 @@ formatter.match({
   "location": "shoppingStep.I_cannot_buy_an_item(String)"
 });
 formatter.result({
-  "duration": 125100,
+  "duration": 132400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
+  "line": 22,
   "name": "No item selected in basket",
   "description": "",
   "id": "check-my-basket-application;no-item-selected-in-basket;;3",
@@ -220,23 +306,66 @@ formatter.scenario({
 formatter.step({
   "line": 6,
   "name": "I start the application",
+  "rows": [
+    {
+      "cells": [
+        "Application_Name"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Flipkart"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "Amazon"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 10,
   "name": "I should see a selection of products",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 11,
   "name": "I browse \"with\" buying product",
   "matchedColumns": [
     0
   ],
+  "rows": [
+    {
+      "cells": [
+        "Product_Name",
+        "Product_Company"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Shoes",
+        "Adidas"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "T-shirt",
+        "4F"
+      ],
+      "line": 14
+    }
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 15,
   "name": "my basket \"shouldnot\" be empty",
   "matchedColumns": [
     1
@@ -244,7 +373,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
   "name": "I \"can\" buy an item",
   "matchedColumns": [
     2
@@ -252,17 +381,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "shoppingStep.I_start_the_application()"
+  "location": "shoppingStep.I_start_the_application(DataTable)"
 });
 formatter.result({
-  "duration": 88800,
+  "duration": 3114600,
   "status": "passed"
 });
 formatter.match({
   "location": "shoppingStep.I_should_see_a_selection_of_products()"
 });
 formatter.result({
-  "duration": 66300,
+  "duration": 106100,
   "status": "passed"
 });
 formatter.match({
@@ -272,10 +401,10 @@ formatter.match({
       "offset": 10
     }
   ],
-  "location": "shoppingStep.I_browse_without_buying_product(String)"
+  "location": "shoppingStep.I_browse_without_buying_product(String,DataTable)"
 });
 formatter.result({
-  "duration": 1873200,
+  "duration": 370400,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +417,7 @@ formatter.match({
   "location": "shoppingStep.my_basket_should_be_empty(String)"
 });
 formatter.result({
-  "duration": 459800,
+  "duration": 109000,
   "status": "passed"
 });
 formatter.match({
@@ -301,11 +430,11 @@ formatter.match({
   "location": "shoppingStep.I_cannot_buy_an_item(String)"
 });
 formatter.result({
-  "duration": 183800,
+  "duration": 104400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
+  "line": 23,
   "name": "No item selected in basket",
   "description": "",
   "id": "check-my-basket-application;no-item-selected-in-basket;;4",
@@ -325,23 +454,66 @@ formatter.scenario({
 formatter.step({
   "line": 6,
   "name": "I start the application",
+  "rows": [
+    {
+      "cells": [
+        "Application_Name"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "Flipkart"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "Amazon"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 10,
   "name": "I should see a selection of products",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 11,
   "name": "I browse \"xxx\" buying product",
   "matchedColumns": [
     0
   ],
+  "rows": [
+    {
+      "cells": [
+        "Product_Name",
+        "Product_Company"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Shoes",
+        "Adidas"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "T-shirt",
+        "4F"
+      ],
+      "line": 14
+    }
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 15,
   "name": "my basket \"yyy\" be empty",
   "matchedColumns": [
     1
@@ -349,7 +521,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
   "name": "I \"zzz\" buy an item",
   "matchedColumns": [
     2
@@ -357,17 +529,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "shoppingStep.I_start_the_application()"
+  "location": "shoppingStep.I_start_the_application(DataTable)"
 });
 formatter.result({
-  "duration": 86200,
+  "duration": 188400,
   "status": "passed"
 });
 formatter.match({
   "location": "shoppingStep.I_should_see_a_selection_of_products()"
 });
 formatter.result({
-  "duration": 58700,
+  "duration": 66300,
   "status": "passed"
 });
 formatter.match({
@@ -377,10 +549,10 @@ formatter.match({
       "offset": 10
     }
   ],
-  "location": "shoppingStep.I_browse_without_buying_product(String)"
+  "location": "shoppingStep.I_browse_without_buying_product(String,DataTable)"
 });
 formatter.result({
-  "duration": 95700,
+  "duration": 230900,
   "status": "passed"
 });
 formatter.match({
@@ -393,7 +565,7 @@ formatter.match({
   "location": "shoppingStep.my_basket_should_be_empty(String)"
 });
 formatter.result({
-  "duration": 132800,
+  "duration": 100300,
   "status": "passed"
 });
 formatter.match({
@@ -406,7 +578,7 @@ formatter.match({
   "location": "shoppingStep.I_cannot_buy_an_item(String)"
 });
 formatter.result({
-  "duration": 102600,
+  "duration": 126200,
   "status": "passed"
 });
 });

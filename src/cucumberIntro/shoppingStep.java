@@ -1,5 +1,9 @@
 package cucumberIntro;
 
+import java.util.List;
+import java.util.Map;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -8,7 +12,10 @@ import cucumber.api.java.en.When;
 public class shoppingStep {
 
 	@Given("^I start the application$")
-	public void I_start_the_application(){
+	public void I_start_the_application(DataTable data){
+		List<Map<String, String>> list = data.asMaps(String.class, String.class);
+		System.out.println("Application is: "+ list.get(0).get("Application_Name"));
+		System.out.println("Application is: "+ list.get(1).get("Application_Name"));
 		System.out.println("I start the application");
 	}
 	
@@ -18,7 +25,12 @@ public class shoppingStep {
 	}
 	
 	@When("^I browse \"([a-zA-Z]{1,})\" buying product$")
-	public void I_browse_without_buying_product(String buyingActivity) {
+	public void I_browse_without_buying_product(String buyingActivity, DataTable data) {
+		List<Map<String, String>> list = data.asMaps(String.class, String.class);
+		System.out.println(list.get(0).get("Product_Name"));
+		System.out.println(list.get(0).get("Product_Company"));
+		System.out.println(list.get(1).get("Product_Name"));
+		System.out.println(list.get(1).get("Product_Company"));
 		System.out.println("I browse "+buyingActivity+" buying product");
 		
 	}
