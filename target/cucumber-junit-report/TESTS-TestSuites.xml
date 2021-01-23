@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite failures="0" id="0" name="JUnitFormatter" package="cucumber.runtime.formatter" skipped="0" tests="5" time="0.538179">
+    <testcase classname="Login into account" name="Valid username and password" time="0.53062">
+      <system-out><![CDATA[Given Launch the Chrome browser.............................................passed
+Given I launch the application..............................................passed
+Then I enter correct username and password..................................passed
+And clicked on Login Button.................................................passed
+Then I am login into application............................................passed
+]]></system-out>
+
+    </testcase>
+
+    <testcase classname="Login into account" name="Valid username and password" time="0.000299">
+      <system-out><![CDATA[Given Launch the Chrome browser.............................................passed
+Given I launch the application..............................................passed
+Then I enter correct username and password..................................passed
+And clicked on Login Button.................................................passed
+Then I am login into application............................................passed
+]]></system-out>
+
+    </testcase>
+
+    <testcase classname="Check my basket application" name="No item selected in basket" time="0.005878">
+      <system-out><![CDATA[Given I start the application...............................................passed
+Then I should see a selection of products...................................passed
+When I browse "without" buying product......................................passed
+Then my basket "should" be empty............................................passed
+And I "cannot" buy an item..................................................passed
+]]></system-out>
+
+    </testcase>
+
+    <testcase classname="Check my basket application" name="No item selected in basket 2" time="0.000779">
+      <system-out><![CDATA[Given I start the application...............................................passed
+Then I should see a selection of products...................................passed
+When I browse "with" buying product.........................................passed
+Then my basket "shouldnot" be empty.........................................passed
+And I "can" buy an item.....................................................passed
+]]></system-out>
+
+    </testcase>
+
+    <testcase classname="Check my basket application" name="No item selected in basket 3" time="0.000603">
+      <system-out><![CDATA[Given I start the application...............................................passed
+Then I should see a selection of products...................................passed
+When I browse "xxx" buying product..........................................passed
+Then my basket "yyy" be empty...............................................passed
+And I "zzz" buy an item.....................................................passed
+]]></system-out>
+
+    </testcase>
+
+  </testsuite>
+</testsuites>
